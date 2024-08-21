@@ -8,8 +8,6 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn install
-     
-
 artifacts:
   files:
     - '**/LoginWebApp-1.war'
