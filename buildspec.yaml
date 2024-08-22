@@ -7,9 +7,14 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn install
+      - mvn clean install
+
 artifacts:
   files:
     - '**/LoginWebApp-1.war'
     - 'appspec.yaml'
   discard-paths: yes
+  base-directory: target  
+  name: LoginWebApp-1.war 
+  discard-paths: yes
+  s3-bucket: java-artifacts-devops4solutions1
