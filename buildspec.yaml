@@ -8,10 +8,11 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install
-      - ls -R target
-
+      - ls target
+  post_build:
+    commands:
+      - echo Build completed. Copying artifacts to output...
 artifacts:
-  base-directory: target
   files:
-    - 'LoginWebApp-1.0.0.war'
+    - target/*.war
   discard-paths: yes
