@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - echo Build completed. Copying artifacts to output...
-      - aws s3 cp target/*.war s3://java-artifacts-devops4solutions/target/LoginWebApp.war
+      #- aws s3 cp target/*.war s3://java-artifacts-devops4solutions/target/LoginWebApp.war
 artifacts:
   files:
     - "**/*"
