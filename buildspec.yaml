@@ -15,5 +15,5 @@ phases:
       - aws s3 cp target/*.war s3://java-artifacts-devops4solutions/target/LoginWebApp.war
 artifacts:
   files:
-    - */*
+    - **/*
   discard-paths: yes
