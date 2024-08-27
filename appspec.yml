@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: LoginWebApp-1.0.0.war
-    destination: /opt/apache-tomcat-9.0.93/webapps/
+    destination: /opt/apache-tomcat-9.0.93/webapps/login
 
 hooks:
   BeforeInstall:
