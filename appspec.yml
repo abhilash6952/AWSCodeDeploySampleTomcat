@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: target/LoginWebApp-1.0.0.war
+  - source: LoginWebApp-1.0.0.war
     destination: /opt/apache-tomcat-9.0.93/webapps/
 
 hooks:
